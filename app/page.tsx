@@ -1,15 +1,18 @@
-import Link from "next/link";
+import Header from "@/components/common/Header";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <header className="p-5 flex justify-between items-center">
-        <h1 className="text-4xl font-bold uppercase">The Loop</h1>
-        <nav className="flex gap-5 list-none font-sans uppercase font-semibold mr-52">
-          <Link href={"/"}>Events</Link>
-          <Link href={"/"}>About</Link>
-        </nav>
-      </header>
+    <div className="p-5 min-h-screen">
+      <Header />
+      <div className="flex justify-between mt-5">
+        <h1 className="text-[210px] font-medium leading-[0.8] tracking-tight">
+          The Loop <br />- Bangkok
+        </h1>
+        <p className="font-sans text-2xl w-[30%]">
+          Your city’s stage for everything live — music, art, and culture
+          brought together in one place. Stay connected.
+        </p>
+      </div>
     </div>
   );
 }
