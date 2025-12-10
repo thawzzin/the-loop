@@ -1,19 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #CCCCCC;
+  --background: #cccccc;
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-primary: #1F1F1F;
+  --color-primary: #1f1f1f;
   --color-secondary: #919191;
   --default-font-family: var(--font-bebas-neue);
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
   background-color: var(--color-background);
   color: var(--color-primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--default-font-family);
+  letter-spacing: -0.02em;
+  line-height: 0.8;
 }
