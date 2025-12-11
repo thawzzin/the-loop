@@ -1,4 +1,6 @@
+import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
+import style from "./style.module.css";
 
 interface UpcomingCardsProps {
   event: {
@@ -9,15 +11,19 @@ interface UpcomingCardsProps {
   };
 }
 
-const UpcomingCards = ({event}: UpcomingCardsProps) => {
+const UpcomingCards = ({ event }: UpcomingCardsProps) => {
   return (
-    <div className="flex justify-between text-3xl py-5">
-      <p>{event.date}</p>
+    <div className={`${style.card} grid grid-cols-3 text-3xl py-5 cursor-pointer`}>
+      <p className="text-secondary">{event.date}</p>
       <div>
         <p>{event.title}</p>
         <p className="text-secondary">Venue : {event.stadium}</p>
+        <div className={`${style.arrowtext} flex items-center mt-5`}>
+          <ArrowRightIcon size={24} />
+          <p className="font-sans text-base font-medium">Read More</p>
+        </div>
       </div>
-      <div className="w-[30%] h-[215px]">
+      <div className="h-[215px]">
         <Image
           src={event.imageUrl}
           alt="poster"
