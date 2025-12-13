@@ -6,7 +6,7 @@ const AnimatedButton = ({ children }: { children: ReactNode }) => {
     <button
       className={`${style.btn} relative bg-primary text-white font-sans uppercase font-medium mx-auto block px-8 py-3 cursor-pointer mt-7 overflow-hidden`}
     >
-      <p>{children}</p>
+      <span className="block">{children}</span>
       <span className="absolute left-1/2 bottom-1/2 -translate-x-1/2 translate-y-[200%] w-full">
         {children}
       </span>
