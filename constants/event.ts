@@ -24,3 +24,42 @@ export const events = [
     imageUrl: "/images/oneOKrock.jpg",
   },
 ];
+
+export const upcomingShows = [
+  {
+    title: "One Ok Rock Detox",
+    date: "2026-02-21",
+    stadium: "Impact Arena",
+    imageUrl: "/images/oneOKrock.jpg",
+  },
+  {
+    title: "One Ok Rock Detox",
+    date: "2026-02-21",
+    stadium: "Impact Arena",
+    imageUrl: "/images/oneOKrock.jpg",
+  },
+  {
+    title: "One Ok Rock Detox",
+    date: "2026-02-21",
+    stadium: "Impact Arena",
+    imageUrl: "/images/oneOKrock.jpg",
+  },
+  {
+    title: "One Ok Rock Detox",
+    date: "2026-02-21",
+    stadium: "Impact Arena",
+    imageUrl: "/images/oneOKrock.jpg",
+  },
+  {
+    title: "One Ok Rock Detox",
+    date: "2026-02-21",
+    stadium: "Impact Arena",
+    imageUrl: "/images/oneOKrock.jpg",
+  },
+  {
+    title: "One Ok Rock Detox",
+    date: "2026-02-21",
+    stadium: "Impact Arena",
+    imageUrl: "/images/oneOKrock.jpg",
+  },
+];

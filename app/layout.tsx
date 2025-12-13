@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
@@ -23,7 +25,9 @@ export default function RootLayout({
       <body
         className={`${bebasNeue.className} antialiased`}
       >
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
