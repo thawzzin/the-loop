@@ -13,17 +13,18 @@ interface UpcomingCardsProps {
 
 const UpcomingCards = ({ event }: UpcomingCardsProps) => {
   return (
-    <div className={`${style.card} grid grid-cols-3 text-3xl py-5 cursor-pointer`}>
-      <p className="text-secondary">{event.date}</p>
-      <div>
-        <p>{event.title}</p>
+    <div className={`${style.card} flex flex-col-reverse md:flex-row gap-2 text-3xl py-5 cursor-pointer`}>
+      <p className="hidden md:block flex-1 text-secondary">{event.date}</p>
+      <div className="flex-1">
+        <p className="leading-[0.8]">{event.title}</p>
         <p className="text-secondary">Venue : {event.stadium}</p>
-        <div className={`${style.arrowtext} flex items-center mt-5`}>
+        <div className={`${style.arrowtext} md:opacity-0 flex items-center mt-5`}>
           <ArrowRightIcon size={24} />
           <p className="font-sans text-base font-medium">Read More</p>
         </div>
       </div>
-      <div className="h-[215px]">
+      <p className="md:hidden text-secondary">{event.date}</p>
+      <div className="md:flex-1 h-[250px] order-1">
         <Image
           src={event.imageUrl}
           alt="poster"
