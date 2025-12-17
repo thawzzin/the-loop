@@ -5,18 +5,27 @@ import React from "react";
 const About = () => {
   return (
     <div className="p-4 md:p-5 space-y-16">
-      <h1 className="text-[104px] md:text-[210px] font-medium leading-[0.8] tracking-tight">
-        About <br /> The Loop
-      </h1>
+      <div className="md:grid grid-cols-2 gap-x-5 md:items-center">
+        <h1 className="text-[104px] md:text-[210px] font-medium leading-[0.8] tracking-tight">
+          About <br /> The Loop
+        </h1>
+        <Image
+          src={"/images/oneOKrock.jpg"}
+          alt="poster"
+          width={300}
+          height={450}
+          className="hidden md:block w-full h-screen object-cover"
+        />
+      </div>
       <div>
         <Image
           src={"/images/oneOKrock.jpg"}
           alt="poster"
           width={300}
           height={450}
-          className="w-full"
+          className="w-full md:hidden"
         />
-        <div className="font-sans mt-10 tracking-[-0.01em] leading-[1.2em] spac">
+        <div className="font-sans md:text-lg mt-10 tracking-[-0.01em] leading-[1.2em] md:w-1/2">
           <p>
             Tucked away in the heart of Bangkok, The Loop is a space built for
             live sound, creative energy, and shared experiences. Once a quiet
@@ -34,34 +43,33 @@ const About = () => {
           </p>
         </div>
       </div>
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-6 my-6">
+      <section className="grid grid-cols-2 md:grid-cols-4 gap-2">
         <Image
           src={"/images/oneOKrock.jpg"}
           alt="poster"
           width={300}
           height={450}
-          className="aspect-square object-cover w-full col-span-1"
+          className="aspect-square object-cover w-full col-span-1 md:order-2"
         />
         <Image
           src={"/images/oneOKrock.jpg"}
           alt="poster"
           width={300}
           height={450}
-          className="aspect-square object-cover w-full col-span-2"
+          className="aspect-square object-cover w-full col-span-2 md:order-1"
         />
         <Image
           src={"/images/oneOKrock.jpg"}
           alt="poster"
           width={300}
           height={450}
-          className="aspect-square object-cover w-full col-span-1"
+          className="aspect-square object-cover w-full col-span-1 col-start-2 md:col-start-1 md:order-3 md:row-start-2"
         />
-        <div className="relative aspect-square w-full col-span-2">
+        <div className="relative aspect-square w-full col-span-2 md:order-4 md:col-start-3">
           <Image
             src={"/images/oneOKrock.jpg"}
             alt="poster"
-            width={300}
-            height={450}
+            fill
             className="object-cover w-full"
           />
           <div className="bg-[rgba(31,31,31,0.1)] absolute inset-0 w-full h-full backdrop-blur-sm z-1" />
