@@ -13,7 +13,7 @@ const Header = () => {
         <Link href={"/events"} className="hover:italic">
           Events
         </Link>
-        <Link href={"/"} className="hover:italic">
+        <Link href={"/about"} className="hover:italic">
           About
         </Link>
       </nav>
