@@ -34,8 +34,8 @@ const EventCard = ({ event, isSmall }: EventCardProps) => {
           />
         </div>
         <div className={isSmall ? "" : "flex justify-between"}>
-          <h3 className="text-3xl">{event.title}</h3>
-          <h3 className="text-3xl text-secondary">{event.date}</h3>
+          <h3 className="text-3xl leading-none">{event.title}</h3>
+          <h3 className="text-3xl leading-none text-secondary">{event.date}</h3>
         </div>
       </Link>
     </div>

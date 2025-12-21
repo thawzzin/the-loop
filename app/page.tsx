@@ -29,7 +29,9 @@ export default function Home() {
 
         {/* Upcoming shows */}
         <section className="mt-20 md:mt-40">
-          <h1 className="text-[120px] leading-[0.8] md:text-[18.9vw] font-medium mb-5">Upcoming shows</h1>
+          <h1 className="text-[120px] leading-[0.8] md:text-[18.9vw] font-medium mb-5">
+            Upcoming shows
+          </h1>
           <div className="md:divide-y divide-secondary/50 md:border-t md:border-b border-secondary/50">
             {upcomingShows.slice(0, 4).map((event, index) => (
               <UpcomingCards key={index} event={event} />
