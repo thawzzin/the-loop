@@ -54,7 +54,7 @@ const Event = async ({ params }: { params: Promise<{ slug: string }> }) => {
               rel="noopener noreferrer"
             >
               <AnimatedButton className="w-full md:w-auto">
-                But Tickets
+                Buy Tickets
               </AnimatedButton>
             </Link>
           </div>
