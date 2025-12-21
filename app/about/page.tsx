@@ -1,5 +1,6 @@
 import AnimatedButton from "@/components/reusable/AnimatedButton";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -75,7 +76,9 @@ const About = () => {
           <div className="bg-[rgba(31,31,31,0.1)] absolute inset-0 w-full h-full backdrop-blur-sm z-1" />
           <div className="absolute inset-0 z-2 flex flex-col justify-center items-center space-y-4">
             <h5 className="text-white text-3xl">See All Upcoming Shows</h5>
-            <AnimatedButton>See All Events</AnimatedButton>
+            <Link href={"/events"}>
+              <AnimatedButton>See All Events</AnimatedButton>
+            </Link>
           </div>
         </div>
       </section>

@@ -35,8 +35,8 @@ export default function Home() {
               <UpcomingCards key={index} event={event} />
             ))}
           </div>
-          <Link href={"/events"} className="block mx-auto my-10 md:mt-5">
-            <AnimatedButton>See All Events</AnimatedButton>
+          <Link href={"/events"} className="block my-10 md:mt-5">
+            <AnimatedButton className="mx-auto">See All Events</AnimatedButton>
           </Link>
         </section>
       </div>

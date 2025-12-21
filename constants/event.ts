@@ -1,3 +1,5 @@
+import slugify from "react-slugify";
+
 export const events = [
   {
     id: 1,
@@ -5,6 +7,8 @@ export const events = [
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
   {
     id: 2,
@@ -12,6 +16,8 @@ export const events = [
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
   {
     id: 3,
@@ -19,6 +25,8 @@ export const events = [
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
   {
     id: 4,
@@ -26,6 +34,8 @@ export const events = [
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
 ];
 
@@ -35,35 +45,47 @@ export const upcomingShows = [
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
   {
     title: "One Ok Rock Detox",
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
   {
     title: "One Ok Rock Detox",
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
   {
     title: "One Ok Rock Detox",
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
   {
     title: "One Ok Rock Detox",
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
   {
     title: "One Ok Rock Detox",
     date: "2026-02-21",
     stadium: "Impact Arena",
     imageUrl: "/images/oneOKrock.jpg",
+    ticketUrl: "",
+    slug: slugify("One Ok Rock Detox"),
   },
 ];

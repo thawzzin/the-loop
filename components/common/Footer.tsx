@@ -9,24 +9,21 @@ const Footer = () => {
           <Link href={"/events"} className="hover:italic">
             Events
           </Link>
-          <Link href={""} className="hover:italic">
+          <Link href={"/about"} className="hover:italic">
             About
-          </Link>
-          <Link href={""} className="hover:italic">
-            Contact
           </Link>
         </div>
       </div>
       <hr className="border-t border-secondary/50 mb-5 mt-10" />
       <div className="flex flex-col md:flex-row gap-4 text-sm md:text-base font-sans font-medium uppercase">
         <nav className="space-x-4">
-          <Link href={""} className="hover:italic">
+          <Link href={"https://www.instagram.com/t_zett1e"} className="hover:italic">
             Instagram
           </Link>
-          <Link href={""} className="hover:italic">
+          <Link href={"https://www.linkedin.com/in/thaw-zin-876380253"} className="hover:italic">
             LinkedIn
           </Link>
-          <Link href={""} className="hover:italic">
+          <Link href={"mailto:thawzzin.dev@gmail.com"} className="hover:italic">
             Mail
           </Link>
         </nav>
