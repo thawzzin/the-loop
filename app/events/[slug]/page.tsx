@@ -9,6 +9,12 @@ const Event = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
   const event: Event | undefined = events.find((e) => e.slug === slug);
 
+  const nextEventIndex = event
+    ? (events.indexOf(event) + 1) % events.length
+    : null;
+  const nextEvent: Event | null =
+    nextEventIndex !== null ? events[nextEventIndex] : null;
+
   if (!event) {
     return <div>Event not found</div>;
   }
@@ -81,10 +87,13 @@ const Event = async ({ params }: { params: Promise<{ slug: string }> }) => {
           loading="eager"
         />
       </div>
-      <div className="font-semibold font-sans uppercase text-sm mt-10 text-right md:flex gap-x-1 justify-end">
+      <Link
+        href={`/events/${nextEvent?.slug}`}
+        className="font-semibold font-sans uppercase text-sm mt-10 text-right md:flex gap-x-1 justify-end"
+      >
         <p className="text-secondary">Next:</p>
-        <p>One Ok Rock Detox</p>
-      </div>
+        <p>{nextEvent?.title}</p>
+      </Link>
     </div>
   );
 };
