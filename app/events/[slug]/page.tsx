@@ -13,6 +13,7 @@ const Event = () => {
           width={300}
           height={450}
           className="w-full md:h-screen aspect-square object-cover"
+          loading="eager"
         />
         <div className="md:grid grid-cols-2">
           <div className="space-y-4">
@@ -58,6 +59,7 @@ const Event = () => {
           width={300}
           height={450}
           className="w-full aspect-square object-cover col-span-1"
+          loading="eager"
         />
         <Image
           src={"/images/oneOKrock.jpg"}
@@ -65,6 +67,7 @@ const Event = () => {
           width={300}
           height={450}
           className="w-full aspect-square object-cover col-span-2 md:col-start-3"
+          loading="eager"
         />
         <Image
           src={"/images/oneOKrock.jpg"}
@@ -72,6 +75,7 @@ const Event = () => {
           width={300}
           height={450}
           className="w-full aspect-square object-cover col-span-2"
+          loading="eager"
         />
       </div>
       <div className="font-semibold font-sans uppercase text-sm mt-10 text-right md:flex gap-x-1 justify-end">

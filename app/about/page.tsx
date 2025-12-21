@@ -16,6 +16,7 @@ const About = () => {
           width={300}
           height={450}
           className="hidden md:block w-full h-screen object-cover"
+          loading="eager"
         />
       </div>
       <div>
@@ -25,6 +26,7 @@ const About = () => {
           width={300}
           height={450}
           className="w-full md:hidden"
+          loading="eager"
         />
         <div className="font-sans md:text-lg mt-10 tracking-[-0.01em] leading-[1.2em] md:w-1/2">
           <p>
@@ -51,6 +53,7 @@ const About = () => {
           width={300}
           height={450}
           className="aspect-square object-cover w-full col-span-1 md:order-2"
+          loading="eager"
         />
         <Image
           src={"/images/oneOKrock.jpg"}
@@ -58,6 +61,7 @@ const About = () => {
           width={300}
           height={450}
           className="aspect-square object-cover w-full col-span-2 md:order-1"
+          loading="eager"
         />
         <Image
           src={"/images/oneOKrock.jpg"}
@@ -65,6 +69,7 @@ const About = () => {
           width={300}
           height={450}
           className="aspect-square object-cover w-full col-span-1 col-start-2 md:col-start-1 md:order-3 md:row-start-2"
+          loading="eager"
         />
         <div className="relative aspect-square w-full col-span-2 md:order-4 md:col-start-3">
           <Image
@@ -72,6 +77,7 @@ const About = () => {
             alt="poster"
             fill
             className="object-cover w-full"
+            loading="eager"
           />
           <div className="bg-[rgba(31,31,31,0.1)] absolute inset-0 w-full h-full backdrop-blur-sm z-1" />
           <div className="absolute inset-0 z-2 flex flex-col justify-center items-center space-y-4">
