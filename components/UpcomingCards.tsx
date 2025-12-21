@@ -36,8 +36,8 @@ const UpcomingCards = ({ event }: UpcomingCardsProps) => {
             <Image
               src={event.imageUrl}
               alt="poster"
-              width={200}
-              height={200}
+              width={2000}
+              height={2000}
               className="w-full h-full object-cover"
             />
           </div>

@@ -1,14 +1,10 @@
+import { Event } from "@/types/event";
 import Image from "next/image";
 import Link from "next/link";
 import slugify from "react-slugify";
 
 interface EventCardProps {
-  event: {
-    id: number;
-    title: string;
-    date: string;
-    imageUrl: string;
-  };
+  event: Event;
   isSmall: boolean;
 }
 
@@ -30,7 +26,6 @@ const EventCard = ({ event, isSmall }: EventCardProps) => {
             alt="poster"
             fill
             className="object-cover object-top hover:grayscale"
-            unoptimized
           />
         </div>
         <div className={isSmall ? "" : "flex justify-between"}>

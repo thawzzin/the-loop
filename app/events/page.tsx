@@ -1,5 +1,5 @@
 import UpcomingCards from "@/components/UpcomingCards";
-import { upcomingShows } from "@/constants/event";
+import { events } from "@/constants/event";
 
 const Events = () => {
   return (
@@ -8,7 +8,7 @@ const Events = () => {
         Upcoming shows
       </h1>
       <div className="md:divide-y divide-secondary/50 md:border-t md:border-b border-secondary/50">
-        {upcomingShows.map((event, index) => (
+        {events.map((event, index) => (
           <UpcomingCards key={index} event={event} />
         ))}
       </div>

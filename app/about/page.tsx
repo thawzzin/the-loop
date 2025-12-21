@@ -11,20 +11,20 @@ const About = () => {
           About <br /> The Loop
         </h1>
         <Image
-          src={"/images/oneOKrock.jpg"}
+          src={"/images/concert5.webp"}
           alt="poster"
-          width={300}
-          height={450}
+          width={2000}
+          height={2000}
           className="hidden md:block w-full h-screen object-cover"
           loading="eager"
         />
       </div>
       <div>
         <Image
-          src={"/images/oneOKrock.jpg"}
+          src={"/images/concert5.webp"}
           alt="poster"
-          width={300}
-          height={450}
+          width={2000}
+          height={2000}
           className="w-full md:hidden"
           loading="eager"
         />
@@ -48,32 +48,32 @@ const About = () => {
       </div>
       <section className="grid grid-cols-2 md:grid-cols-4 gap-2">
         <Image
-          src={"/images/oneOKrock.jpg"}
+          src={"/images/concert3.webp"}
           alt="poster"
-          width={300}
-          height={450}
+          width={2000}
+          height={2000}
           className="aspect-square object-cover w-full col-span-1 md:order-2"
           loading="eager"
         />
         <Image
-          src={"/images/oneOKrock.jpg"}
+          src={"/images/concert1.jpg"}
           alt="poster"
-          width={300}
-          height={450}
+          width={2000}
+          height={2000}
           className="aspect-square object-cover w-full col-span-2 md:order-1"
           loading="eager"
         />
         <Image
-          src={"/images/oneOKrock.jpg"}
+          src={"/images/concert4.webp"}
           alt="poster"
-          width={300}
-          height={450}
+          width={2000}
+          height={2000}
           className="aspect-square object-cover w-full col-span-1 col-start-2 md:col-start-1 md:order-3 md:row-start-2"
           loading="eager"
         />
         <div className="relative aspect-square w-full col-span-2 md:order-4 md:col-start-3">
           <Image
-            src={"/images/oneOKrock.jpg"}
+            src={"/images/concert2.jpg"}
             alt="poster"
             fill
             className="object-cover w-full"

@@ -3,7 +3,7 @@ import Header from "@/components/common/Header";
 import EventCard from "@/components/EventCard";
 import AnimatedButton from "@/components/reusable/AnimatedButton";
 import UpcomingCards from "@/components/UpcomingCards";
-import { events, upcomingShows } from "@/constants/event";
+import { events, featuredEvents } from "@/constants/event";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
 
         {/* Feature events  */}
         <section className="grid grid-cols-3 md:grid-cols-4 gap-x-2 gap-y-6 my-6">
-          {events.map((event, index) => (
+          {featuredEvents.map((event, index) => (
             <EventCard key={index} event={event} isSmall={index % 3 === 0} />
           ))}
         </section>
@@ -33,7 +33,7 @@ export default function Home() {
             Upcoming shows
           </h1>
           <div className="md:divide-y divide-secondary/50 md:border-t md:border-b border-secondary/50">
-            {upcomingShows.slice(0, 4).map((event, index) => (
+            {events.slice(0, 4).map((event, index) => (
               <UpcomingCards key={index} event={event} />
             ))}
           </div>
